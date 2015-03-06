@@ -24,7 +24,10 @@
     var app = new senna.App();
     app.setBasePath('/MySPAwithSENNA/demo/pages/');
     app.addSurfaces('content');
-    app.addRoutes(new senna.Route(/\w+\.html/, senna.HtmlScreen));
+    app.addRoutes([
+        new senna.Route('page1.html', senna.HtmlScreen),
+        new senna.Route('page2.html', senna.HtmlScreen)
+    ]);
 
     app.navigate('/MySPAwithSENNA/demo/pages/page1.html');
     </script>

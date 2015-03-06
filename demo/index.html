@@ -11,8 +11,8 @@
 </head>
 
 <body data-senna>
-    <a href="pages/page1.html">Page 1</a>
-    <a href="pages/page2.html">Page 2</a>
+    <a href="/pages/page1.html">Page 1</a>
+    <a href="/pages/page2.html">Page 2</a>
     <!-- Content surface -->
     <div id="content">
         <div id="content-default">
@@ -22,11 +22,11 @@
     <!-- End of content surface -->
     <script>
     var app = new senna.App();
-    app.setBasePath('pages/');
+    app.setBasePath('/demo/pages/');
     app.addSurfaces('content');
     app.addRoutes(new senna.Route(/\w+\.html/, senna.HtmlScreen));
 
-    app.navigate('pages/page1.html');
+    app.navigate('/demo/pages/page1.html');
     </script>
 </body>
 
